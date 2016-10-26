@@ -1,7 +1,11 @@
 {
   "name": "eleven-check",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A simple utility to simulate a lambda trigger",
+  "repository" : {
+    "type" : "git",
+    "url" : "git@github.com:asimpson/eleven-check.git"
+  },
   "main": "index.js",
   "bin": "index.js",
   "preferGlobal": true,
