@@ -1,6 +1,8 @@
 #! /usr/bin/env node
 const path = require('path');
+const eventParse = require('./lib/eventParse');
 const check = require(path.resolve(process.env.PWD, process.argv[2]));
+const event = process.argv[3] ? eventParse(process.argv[3]) : {};
 
 const callback = (err, data) => {
   if (err) {
@@ -14,4 +16,4 @@ const callback = (err, data) => {
   }
 };
 
-check.handler('', '', callback);
+check.handler(event, {}, callback);
