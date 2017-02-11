@@ -1,10 +1,10 @@
 {
   "name": "eleven-check",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "A simple utility to simulate a lambda trigger",
-  "repository" : {
-    "type" : "git",
-    "url" : "git@github.com:asimpson/eleven-check.git"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:asimpson/eleven-check.git"
   },
   "main": "index.js",
   "bin": "index.js",
@@ -13,5 +13,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adam Simpson",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "node-emoji": "^1.5.1"
+  }
 }
